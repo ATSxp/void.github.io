@@ -4,16 +4,37 @@ body {
   background-color: #303030;
 }
 
+h1 {
+  font-family: Ubuntu, Lora, monospace;
+}
+
+h2 {
+  font-family: Ubuntu, Lora, monospace;
+}
+
+blockquote {
+  font-family: Courier New, Lora, monospace;
+}
+
+p {
+  font-family: Courier New, Lora, monospace;
+}
+
 main {
   background-color: white;
   text-align: center;
   width: 70%;
   margin: auto;
-  border: 2px solid #000;
-  border-radius: 8px;
+  border: 1px solid #000;
+  border-radius: 12px;
   padding: 10px;
 }
 
 .sumario {
   text-align: left;
+}
+
+.content {
+  text-align: left;
+  padding: 20px;
 }
