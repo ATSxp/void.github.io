@@ -42,12 +42,104 @@
           &nbsp;Na minha opinião, estudar sobre 
           o hardware/software de um console/jogo que amamos nos trará um conhecimento que 
           sempre nos perguntavamos quando criança, sem contar na diversão em trabalhar num 
-          jogo/programa.<br>
+          jogo/programa.
+          <br>
           &emsp;Se você procura também estudar alguma linguagem de programação (como C/C++), 
           estará aprendendo e executando suas idéias da melhor forma (que me convém pelo menos), 
           fazendo jogos!
         </p>
       </div>
+
+      <br>
+
+      <h2>Montando o ambiente</h2>
+      <div class="content">
+        <p>Como havia dito antes, precisamos instalar alguns programas para nos ajudar nesta jornada, vamos por categorias:</p>
+      </div>
+
+      <h2>Lógica</h2>
+
+      <div class="content">
+        <h3>Compilador</h3>
+        <p>
+          &emsp;Caso não saiba, com o compilador podemos transformar nossos códigos C/C++ em algo que possa ser lido pelo 
+          GBA.<br>
+          &emsp;Vamos usar o <b>DevkitARM</b> da Devkitpro, com ele podemos ter um compilador apropriado para funcionar 
+          com o Game Boy Advance, sem contar que é a nossa opção mais atualizada e vem com todo um ambiente 
+          junto para nos ajudar mais ainda.
+          <br><br>
+
+          <a href="https://github.com/devkitPro/installer/releases">Para usuários de Windows, há um instalador gráfico no Github deles</a>
+          <br><br>
+          <a href="https://devkitpro.org/wiki/devkitPro_pacman">
+            Para usuários de Linux/Mac, temos que 
+            instalar pelo terminal, no site eles explicam como fazer isso
+          </a>
+
+          <br><br>
+
+          Vou deixar alguns vídeos que podem ajudar na instalação:
+
+          <li>
+            <a href="https://www.youtube.com/watch?v=mY3fd3hNUEk&t=13s">Windows</a>
+          </ol>
+          <li>
+            <a href="https://www.youtube.com/watch?v=8v3Ci_KvMNM">Linux</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=npBynWIY5Lg&t=4s">Mac</a>
+          </li>
+        </p>
+      </div>
+
+      <div class="content">
+        <h3>Biblioteca</h3>
+        <p>
+          &emsp;Com uma biblioteca (ou uma library/lib no inglês) podemos manipular o hardware do GBA. 
+          Pois trabalhar no Game Boy nada mais é do que ligar e desligar alguns bits, 
+          mapeamentos da memória do hardware, <strong>muita matemática</strong>, etc… e nessas bibliotecas 
+          temos toda a memória do console mapeada e funções úteis que ajudarão no nosso desenvolvimento.
+          <br><br>
+          &emsp;Porém o problema de muitos sites/videos sobre programação no GBA é que explicam como 
+          <i><b>‘criar’</b></i> sua própria <i><b>‘lib’</b></i> (ou basicamente explicar como o hardware 
+          funciona de forma detalhada), 
+          não os julgo, até porque foi desta forma que aprendi a programar nele, mas o meu objetivo é 
+          ensinar a alguém que só quer criar seus jogos e não se perder com coisas que só pessoas com um 
+          bom tempo de estudo entenderia (até porque, ninguém é obrigado a ter um doutorado numa faculdade 
+          de Ciências da Computação para operar um ‘’’<strong>simples</strong>’’’ console).
+          <br><br>
+          &emsp;Existem várias ‘libs’ (me apeguei a falar só ‘lib’) para muitas linguagens de programação, mas no 
+          nosso caso só queremos as projetadas para C/C++.
+          <br><br>
+
+          <a href="https://github.com/devkitPro/libgba"><h4>LibGba</h4></a>
+          <br>
+          &emsp;Biblioteca vinda com DevkitARM, ela é a menos recomendada mas não porque é ruim, mas 
+          pela sua carencia em áreas não abordadas no hardware, como funções básicas de desenho 
+          para os <b>modos de Bitmap</b> (mais a frente você vai saber o que é isso) por exemplo.
+          <br><br>
+
+          <a href="https://github.com/GValiente/butano"><h4>Butano</h4></a>
+          <br>
+          &emsp;Na minha opinião e de muitos, é a melhor opção para quem quer desenvolver no GBA. 
+          Moderno, atualizado, bem documentado, aborda todas as áreas do console e usa C++ 
+          como linguagem (triste para os fãs de C).
+          <br>
+          &emsp;Mas mesmo assim não vou usá-la, pois meu 
+          computador não é dos melhores (CPU dual-core &#128546;) e como Butano tem uma 
+          <strong>tonelada</strong> de arquivos para compilar, minha máquina <strong>demora MUITO</strong> para 
+          terminar a compilação, mas se você tem um computador legal, vá em frente.
+          <br><br>
+
+          <a href="https://github.com/devkitPro/libtonc"><h4>LibTonc</h4></a>
+          &emsp;Aqui o meu <i>‘xodó’</i>, também vem junto com DevkitARM, ela é a biblioteca mais 
+          reverente da comunidade, vinda dos <a href="https://www.coranac.com/tonc/text/">tutoriais de mesmo nome (Tonc, só Tonc)</a> 
+          possibilitou a vários usuários pelo mundo entenderem como funcionava de fato o desenvolvimento no 
+          Game Boy, não aborda todas as áreas do console, mas já é bem usável no desenvolvimento, 
+          suporta C/C++.
+        </p>
+      </div>
+
     </main>
   </body>
 </html>
